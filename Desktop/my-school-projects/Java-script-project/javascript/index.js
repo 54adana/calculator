@@ -1,4 +1,5 @@
-function userInfo(){
+function userInfo() {
+    
     var CC=parseInt(document.getElementById("century").value);
     var YY=parseInt(document.getElementById("year").value);
     var MM=parseInt(document.getElementById("month").value);
