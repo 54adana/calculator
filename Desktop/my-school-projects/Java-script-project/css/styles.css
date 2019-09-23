@@ -1,18 +1,20 @@
 h1{
     text-align: left;
     color:whitesmoke;
-    font: 1em sans-serif;
-    padding: 10px;
     font-size: 30px;
+
 } 
 P{
     text-align: left;
     padding: 30px;
     color: white;
-    font-size: 30px;
+    font-size:30px;
+    
 }
 body{
-    background-color:blue;
+    background-image: url("/images/backgroun2.jpeg ");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 
@@ -21,6 +23,9 @@ h1 strong{
     text-align: center;
     padding: 30px
 } 
+form{
+    align-items:center;
+}
 
 
 

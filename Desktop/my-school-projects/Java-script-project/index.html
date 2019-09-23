@@ -1,31 +1,34 @@
 <html>
   <head>
       <title>NAMES</title>
+
       <link rel="stylesheet" type="text/css" href="css/styles.css">
       
       </head>
       <body>
           
             <h1><strong>AKAN NAMES</strong></h1>
-            <script type="text/javascript" src="javascript/index.js"></script>
+           
             <P>Generate birthdays to all gender depending on their akan names and gender </P>
+
+            <script src="javascript/index.js"></script>
             <form>
                 <h1>century:</h1>
-                <input type="text" name="century"><br>
+                <input type="number" id="century"><br>
                 <h1>Year</h1>
-                <input type="text" name="year">
+                <input type="number" id="year">
                 <h1>Month</h1>
-                <input type="text" name="month">
+                <input type="number" id="month">
                 <h1>Date</h1>
-                <input type="text" name="day">
+                <input type="number" id="day">
         
                 <input type="radio" name="gender" value="1">Female<br>
                 <input type="radio" name="gender" value="2">Male<br>
 
-                 <input type="button" value="submit" oneclick="userInfo";
+                 <input type="button" value="submit" onclick="akanEntry();">
                 
              </form>
-            
+
                 </body>
                 </html>
                       

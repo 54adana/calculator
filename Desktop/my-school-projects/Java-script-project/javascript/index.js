@@ -1,21 +1,24 @@
-function userInfo() {
-    
+function akanEntry(){
+
     var CC=parseInt(document.getElementById("century").value);
     var YY=parseInt(document.getElementById("year").value);
     var MM=parseInt(document.getElementById("month").value);
     var DD=parseInt(document.getElementById("day").value);
 
-    var dd = parseInt( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+    var day = parseInt( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
 
-    var gender=parseInt(document.querySelector('input[name"gender"]:checked').value);
+    alert("Your Birthday is "+" "+ DD+ " "+ MM +" " + CC + YY);
+
+    var gender=parseInt(document.querySelector('input[name="gender"]:checked').value);
 
 
-//alert(Your Birthday is "+" "+ dd + " "+ mm +" " + cc + yy" );
+
+
  
-if(gender===1)
+if(gender==1)
 {
  alert ("You are  Female");  
-}
+
 
  if (day===0){
 alert("your akan name should be Akosua");
@@ -42,11 +45,15 @@ else if (day===5){
 else if (day===6){
     alert("your akan name should be Ama");
 }
+else{
+    alert("error");
+}
+}
  
-if(gender===1)
+if(gender==2)
 {
  alert ("You are  Male");  
-}
+
 
  if (day===0){
 alert("your akan name should be kwasi");
@@ -73,8 +80,13 @@ else if (day===5){
 else if (day===6){
     alert("your akan name should be kwame");
 }
+else{
+    alert("error");
 }
-userInfo();
+}
+}
+
+akanEntry();
 
 
 
