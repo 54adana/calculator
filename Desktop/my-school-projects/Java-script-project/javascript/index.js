@@ -1,44 +1,84 @@
 function userInfo(){
-    let century=document.forms["myForm"]["century"].value
-    let year=document.forms["myForm"]["year"].value
-    let month=document.forms["myForm"]["month"].value
-    let day=document.forms["myForm"]["day"].value
-    let gender=document.forms["myForm"]["gender"].value
+    var CC=parseInt(document.getElementById("century").value);
+    var YY=parseInt(document.getElementById("year").value);
+    var MM=parseInt(document.getElementById("month").value);
+    var DD=parseInt(document.getElementById("day").value);
 
-}
+    var dd = parseInt( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+
+    var gender=parseInt(document.querySelector('input[name"gender"]:checked').value);
 
 
-var cc= parseInt(prompt("Enter the first two digits of the century you were born"))
-var yy= parseInt(prompt("Enter  the last two digitsof the year you were born"))
-var mm= parseInt(prompt("Enter the two digits of the month you were born"))
-var dd= parseInt(prompt("enter the digit of the day you were born"))
-
-//alert(Your Birthday is "+" "+ dd + " "+ mm +" " + cc + yy" )
-
-var day = parseInt( (cc/4) -
-alert("The day of the week you were born is;" + day);
-var gender=prompt ("Enter the number that represents your gender. 1= Female 2= Male ");
+//alert(Your Birthday is "+" "+ dd + " "+ mm +" " + cc + yy" );
  
 if(gender===1)
 {
  alert ("You are  Female");  
 }
 
-else if (century==""){
-alert("input the correct century");
+ if (day===0){
+alert("your akan name should be Akosua");
 }
 
 
-else if (year==""){
-    alert("input the correct year");     
+else if (day===1){
+    alert("your akan name should be Adwoa");     
 }
 
-else if (month==""){
-    alert("input the correct month");
+else if (day===2){
+    alert("your akan name should be Abenaa");
 }
-else if (dayofmonth=""){
-    alert("input the day of the week");
+else if (day===3){
+    alert("your akan name should be Akua");
 }
+
+else if (day===4){
+      alert("your akan name should be Yaa");
+}
+else if (day===5){
+    alert("your akan name should be Afua");
+}
+else if (day===6){
+    alert("your akan name should be Ama");
+}
+ 
+if(gender===1)
+{
+ alert ("You are  Male");  
+}
+
+ if (day===0){
+alert("your akan name should be kwasi");
+}
+
+
+else if (day===1){
+    alert("your akan name should be kwadao");     
+}
+
+else if (day===2){
+    alert("your akan name should be kwabena");
+}
+else if (day===3){
+    alert("your akan name should be kwaku");
+}
+
+else if (day===4){
+      alert("your akan name should be Yaw");
+}
+else if (day===5){
+    alert("your akan name should be kofi");
+}
+else if (day===6){
+    alert("your akan name should be kwame");
+}
+}
+userInfo();
+
+
+
+
+
 
 
 

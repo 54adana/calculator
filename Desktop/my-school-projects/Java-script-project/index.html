@@ -5,12 +5,11 @@
       
       </head>
       <body>
-          <div class="container">
-              <div class="row">
-              <div class="col-md-6">
+          
             <h1><strong>AKAN NAMES</strong></h1>
+            <script type="text/javascript" src="javascript/index.js"></script>
             <P>Generate birthdays to all gender depending on their akan names and gender </P>
-            <form name="myForm" onsubmit="userInfo()">
+            <form>
                 <h1>century:</h1>
                 <input type="text" name="century"><br>
                 <h1>Year</h1>
@@ -19,28 +18,13 @@
                 <input type="text" name="month">
                 <h1>Date</h1>
                 <input type="text" name="day">
-            </form>
-          
-            <form action="/action.page.php">
-                <select name="gender">
-                    
-                    <option value="Female">Female</option>
-                    <option value="Male">Male</option>
-                </select>
-               </form>
-
-                <form>
-                 <input type="submit" value="submit">
-                  <input type="reset">
-                </form>
-                </div>
-                <div class="col-md-6">
-                </div>
-                <button type="button" onclick="alert('Hello!')">click Me!</button>
-
-                <script src="javascript/index.js"></script>
-                </div>
-                </div>
+        
+                <input type="radio" name="gender" value="1">Female<br>
+                <input type="radio" name="gender" value="2">Male<br>
+                 <button type="button" onclick="userInfo()">submit</button>
+                
+             </form>
+            
                 </body>
                 </html>
                       
