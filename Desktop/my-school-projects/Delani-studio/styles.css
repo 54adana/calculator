@@ -1,0 +1,39 @@
+.img{
+    background-image: url("../assets/backgrounds/h_img.jpg");
+     color: antiquewhite;
+    text-align: center;
+    background-size: cover;
+    height: 680px;
+    padding-top: 250px;
+}
+.pic{
+    text-align: center
+}
+.x{
+    background-image: url("../assets/backgrounds/s_image.jpg");
+    text-align: center;
+    background-size: cover;
+    height: 300px;
+    color: antiquewhite;
+    padding-top: 100px;
+
+}
+.y{
+    text-align: center;
+}
+.d{
+    text-align: center;
+
+}
+.d{
+    text-align: center;
+    background-image: url("../assets/backgrounds/c_image.jpg");
+    height: 90px;
+    padding-top: 200px;
+    background-size: cover;
+
+}
+#us{
+    text-align: center;
+    float: down;
+}
