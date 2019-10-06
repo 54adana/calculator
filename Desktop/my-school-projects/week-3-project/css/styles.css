@@ -1,0 +1,15 @@
+.head{
+    background-image: url("/IMAGES/background2.jpeg")
+    text-align: center;
+    background-size: cover;
+    height: 400px;
+    
+}
+.us{
+    text-align: left;
+    background-image: url("/IMAGES/background2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+
+}
