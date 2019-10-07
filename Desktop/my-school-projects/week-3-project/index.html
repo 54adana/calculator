@@ -30,7 +30,7 @@
           <div class="small">
           <div class="card-title">SMALL</div>
           <div class="card-body">
-              <img src="/IMAGES/pizza1.jpg" width="200px" height="200px"> <br>
+              <img src="./IMAGES/pizza1.jpg" width="200px" height="200px"> <br>
               <div class="class">
               <label for="">Toppings</label>
               <select class="form control" id="toppings">
@@ -45,6 +45,7 @@
                         <option>Stuffed</option>
                         <option>Glutten-free</option>
                     </select><br>
+                    <h2 id="size" value="750">KSH 750 </h2>
                     <button>Add cart</button>
           </div>
 
@@ -56,21 +57,22 @@
       <div class="card">
             <div class="card-title">MEDIUM</div>
             <div class="card-body">
-                <img src="/IMAGES/pizza 2.jpeg" width="200px" height="200px"> <br>
+                <img src="./IMAGES/pizza 2.jpeg" width="200px" height="200px"> <br>
                 
                 <label for="">Toppings</label>
                 <select class="form control" id="toppings">
-                      <option>peppeeroni</option>
-                    <option>bacon</option>
-                    <option>extra cheese</option>
-                    <option>Mushroom</option>
+                      <option label="pepperoni ksh 200" value="200">pepperoni</option>
+                    <option label="bacon Ksh 210" value="210">bacon</option>
+                    <option label="extra cheese Ksh 180" value="180">extra cheese</option>
+                    <option label="mushroom Ksh 160" value="160">Mushroom</option>
                   </select> <br>
                   <label for="">Crust</label>
                   <select class="form control" id="Crust">
-                          <option>Crispy</option>
+                          <option >Crispy</option>
                           <option>Stuffed</option>
                           <option>Glutten-free</option>
                       </select><br> 
+                      <h2 id="size" value="950">KSH 950 </h2>
                       <button>Add cart</button>
   
             </div>
@@ -80,7 +82,7 @@
       <div class="card ">
             <div class="card-title">LARGE</div>
             <div class="card-body">
-                <img src="/IMAGES/pizza3.jpeg" width="200px" height="200px"> <br>
+                <img src="./IMAGES/pizza3.jpeg" width="200px" height="200px"> <br>
                 
                 <label for="">Toppings</label>
                 <select class="form control" id="toppings">
@@ -95,6 +97,7 @@
                           <option>Stuffed</option>
                           <option>Glutten-free</option>
                       </select><br>
+                      <h2 id="size" value="1150">KSH 1150 </h2>
                       <button>add cart</button>
   
             </div>
@@ -103,6 +106,27 @@
                  
     </div>
 </div>
+<table class="table mt-5 overlay">
+               <thead>
+                   <tr>
+                       <th scope="col">Pizza Order</th>
+                       <th scope="col">Size</th>
+                       <th scope="col">Crust</th>
+                       <th scope="col">Toppings</th>
+                       <th scope="col">Total</th>
+                   </tr>
+               </thead>
+               <tbody id="pizza">
+                   <tr>
+                       <th scope="row">1</th>
+                       <td id="size"></td>
+                       <td id="toppings"></td>
+                       <td class="crust"></td>
+                       <td class="total"></td>
+                   </tr>
+               </tbody>
+           </table>
+
 <div class="us">
      
 <h1>ORDER NOW</h1>
